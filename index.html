@@ -1222,6 +1222,10 @@
                 link.addEventListener('click', function (e) {
                     e.preventDefault();
                     const section = this.getAttribute('data-section');
+                    if (section === 'cv') {
+                        window.open('https://www.dropbox.com/scl/fi/lq5ttog4f6vzyi1u8tqg3/CV_SudarakaAriyaratne.pdf?rlkey=3e0xwpfkbjgf5wx2cd8kvhrcx&st=nc9e43er&dl=0', '_blank');
+                        return;
+                    }
                     showContent(section);
 
                     if (document.body.classList.contains('is-menu-sidebar')) {
